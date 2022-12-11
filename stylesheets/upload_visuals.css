@@ -1,0 +1,158 @@
+@import url(/stylesheets/navigation.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a 
+{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root
+{
+  /* color pallet variables */
+
+  --COLOR-graphite_black_001: rgb(0, 0, 0, 0.69);
+  --COLOR-neon_GREEN_002: rgb(141, 255, 166, 1);
+  --COLOR-neon_RED_003: rgb(255, 149, 135);
+  --COLOR-fresh_purple_004: rgb(120, 56, 255, 1);
+  --COLOR-calm_pink_005: rgb(255, 191, 191, 1);
+  --COLOR-carbon_black: rgb(73, 73, 73, 1);
+  --COLOR-SECONDARY_fresh_purple: rgb(0, 13, 255);
+  --COLOR-LANDING-purple-mix:rgb(87, 57, 238) ;
+
+  /* typography */
+  --FONT-fira_code: font-family: 'Fira Code', monospace;
+  --FONT-ibm_sans: font-family: 'IBM Plex Sans Arabic', sans-serif;
+  --FONT-nunito_sans:font-family: 'Nunito Sans', sans-serif;
+  --FONT-red_hat:font-family: 'Red Hat Mono', monospace;
+  --FONT-ubuntu_mono:font-family: 'Ubuntu Mono', monospace;
+
+  /* borders */
+  --generic_BORDER: border 1px solid black;
+  --transparent_BORDER: border 0px solid transparent;
+
+  /* linear-gradients */
+  --GRADIENT-001: linear-gradient(to right top, #6348e7, #6448e2, #6448de, #6548d9, #6548d5, #6649d4, #6649d2, #674ad1, #694cd2, #6a4ed4, #6c4fd5, #6d51d6);  
+
+  /* UPON HOVER */
+  --HOVER-translate_button-001: rgb(137, 63, 255);
+}
+
+
+body
+{
+    line-height: 1.5;
+    background-color: rgb(223, 215, 255);
+}
+
+
+.form_position_control
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-inline-start: 2rem ;
+    margin-inline-end: 2rem;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+  
+
+input[type=text]:focus
+{
+    background-color:#f2f2f2;
+}
+
+#LastName
+{
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+#Email
+{
+    margin-bottom: 1rem;
+}
+
+
+
+.last_step_bttn
+{
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+
+    border-bottom: 5px solid black;
+    border-radius: 20px;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    text-transform: uppercase;   
+
+    background-color: rgb(108, 66, 246);
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+#file_upload
+{
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Nunito Sans', sans-serif;
+
+    margin-top: 5rem;
+}
+
+
+#description
+{
+    min-height: 10vh;
+}
+.last_step_bttn:hover
+{
+    background-color:#8569ff;
+    border-bottom: 5px solid rgb(72, 72, 72);
+}
+
+.last_step_bttn:focus
+{
+    background-color:#967eff;
+    border-bottom: 5px solid rgb(97, 97, 97);
+}
+
+
+@media screen and (max-width: 1274px)
+{
+    .form_title p 
+    {
+        margin-inline-start: 2rem ;
+        margin-inline-end: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .form_title p 
+    {
+        font-size: 1.3rem;
+    }
+}
