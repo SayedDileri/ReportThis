@@ -1,0 +1,469 @@
+@import url(/stylesheets/navigation.css);
+
+/* CSS basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a 
+{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root
+{
+  /* color pallet variables */
+
+  --COLOR-graphite_black_001: rgb(0, 0, 0, 0.69);
+  --COLOR-neon_GREEN_002: rgb(141, 255, 166, 1);
+  --COLOR-neon_RED_003: rgb(255, 115, 80);
+  --COLOR-fresh_purple_004: rgb(120, 56, 255, 1);
+  --COLOR-calm_pink_005: rgb(255, 191, 191, 1);
+  --COLOR-carbon_black: rgb(73, 73, 73, 1);
+  --COLOR-SECONDARY_fresh_purple: rgb(113, 57, 203, 1);
+
+  /* typography */
+  --FONT-fira_code: font-family: 'Fira Code', monospace;
+  --FONT-ibm_sans: font-family: 'IBM Plex Sans Arabic', sans-serif;
+  --FONT-nunito_sans:font-family: 'Nunito Sans', sans-serif;
+  --FONT-red_hat:font-family: 'Red Hat Mono', monospace;
+  --FONT-ubuntu_mono:font-family: 'Ubuntu Mono', monospace;
+
+  /* borders */
+  --generic_BORDER: border 1px solid black;
+  --transparent_BORDER: border 0px solid transparent;
+
+  /* linear-gradients */
+  --GRADIENT-001: linear-gradient(to right top, #6348e7, #6448e2, #6448de, #6548d9, #6548d5, #6649d4, #6649d2, #674ad1, #694cd2, #6a4ed4, #6c4fd5, #6d51d6);  
+
+  /* UPON HOVER */
+  --HOVER-translate_button-001: rgb(149, 91, 241);
+
+}
+
+body
+{
+  line-height: 1.5;
+  background-image: linear-gradient(to bottom, #ac37ff, #a652ff, #a96bff, #b682ff, #dcc3ff);
+}
+
+.report_type_container
+{
+    min-height: 90vh;
+}
+
+.report_type_container 
+.main_heading
+{
+    display: flex;
+    justify-content: center;
+
+    padding: 10vh 0vh;
+    margin: 0rem 1rem;
+    
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+
+    color: white;
+}
+
+.report_type_container
+.report_type_tiles 
+{
+    display: flex;
+    justify-content: space-around;
+
+    justify-items: center;
+    align-items: center;
+
+    margin: 0rem 0.5rem;
+}
+
+.report_type_tiles a
+{
+    color: rgb(78, 78, 78);
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.report_type_tiles 
+.council 
+{
+    padding: 6rem 7rem;
+    border-radius: 40px;
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition: 0.3s ease-in-out;
+}
+
+.report_type_tiles 
+.council:hover 
+
+{
+    background-color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
+.report_type_tiles 
+.authorities
+{
+    margin-bottom: 2rem;
+    padding: 6rem 7rem;
+    border-radius: 40px;
+    
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    transition: 0.3s ease-in-out;
+} 
+
+.report_type_tiles 
+.authorities:hover 
+{
+    background-color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 1024px)
+    {
+        .report_type_container 
+        .main_heading
+        {
+            font-size: 1.9rem;
+        }
+
+        .report_type_tiles 
+        .council 
+        {
+            padding: 5rem 6rem;
+        }
+
+        .report_type_tiles 
+        .authorities 
+        {
+            padding: 5rem 6rem;
+        }
+
+        .report_type_tiles a
+        {
+            font-size: 1.9rem;
+        }
+        
+    }
+
+@media screen and (max-width: 768px)
+    {
+        .report_type_tiles 
+        .council 
+        {
+            padding: 4rem 5rem;
+        }
+
+        .report_type_tiles 
+        .authorities 
+        {
+            padding: 4rem 5rem;
+        }
+
+        .report_type_tiles a
+        {
+            font-size: 1.7rem;
+        }
+    }
+
+@media screen and (max-width: 670px)
+    {
+        .report_type_container
+        .report_type_tiles 
+        {
+            flex-direction: column;
+        }
+
+        .report_type_container 
+        .main_heading
+        {
+            font-size: 1.65rem;
+            text-align: center;
+        }
+
+        .report_type_tiles 
+        .council
+        {
+            margin-bottom: 2rem;
+        } 
+
+    }
+
+
+@media screen and (max-width: 425px)
+    {
+        .report_type_tiles a
+        {
+            font-size: 1.6rem;
+        }
+    }
+
+@media screen and (max-width: 375px)
+    {
+        .report_type_tiles a
+        {
+            font-size: 1.5rem;
+        }    
+    }
+
+@media screen and (max-width: 320px)
+    {
+        .report_type_tiles 
+        .council 
+        {
+            padding: 4rem 4rem;
+        }
+
+        .report_type_tiles 
+        .authorities 
+        {
+            padding: 4rem 4rem;
+        }
+
+        .report_type_tiles a
+        {
+            font-size: 1.3rem;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main_heading 
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+}
+
+.main_heading p
+{
+    margin: 2rem 0rem 5rem 0rem;
+    border-radius: 1.5rem;
+    font-size: 2.2rem;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: bold;
+    color: white;
+}
+
+.report_type_tiles
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 30vh;
+
+}
+
+.report_type_tiles a
+{
+    padding: 5rem 8rem;
+    border-radius: 40px;
+    background-color: rgb(242, 242, 242);
+    color: rgb(74, 74, 74);
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    transition: 300ms;
+}
+
+.report_type_tiles
+    a[href="/Files/council.html"]:hover,
+    a[href="/Files/authorities.html"]:hover
+{
+    background-color: rgb(234, 234, 234);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+    @media screen and (max-width: 1024px)
+    {
+
+        .main_heading p
+        {
+            margin: 2rem 0rem 5rem 0rem;
+            font-size: 2.5rem;
+        }
+
+        .report_type_tiles
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .council
+        {
+            margin-bottom: 5rem;
+        }
+
+        .authorities
+        {
+            margin-bottom: 5rem;
+        }
+
+        .report_type_tiles
+            a[href="/Files/council.html"],
+            a[href="/Files/authorities.html"]
+        {
+            font-size: 2.5rem;
+        }
+
+
+    }
+
+    @media screen and (max-width: 900px)
+    {
+        .main_heading p
+        {
+            margin: 2rem 0rem 2rem 0rem;
+            font-size: 2.3rem;
+            margin-inline-start: 3.2rem;
+            margin-inline-end: 3.2rem; 
+        }  
+
+        .report_type_tiles
+            a[href="/Files/council.html"],
+            a[href="/Files/authorities.html"]
+        {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) 
+    {
+        .main_heading p
+        {
+            font-size: 2rem;
+            padding: 0.5rem 2rem;
+            margin-inline-start: 3.25rem;
+            margin-inline-end: 3.25rem; 
+        }  
+
+        .report_type_tiles
+        a[href="/Files/council.html"],
+        a[href="/Files/authorities.html"]
+        {
+            font-size: 2.3rem;
+            padding: 2.2rem 7rem;
+        }
+
+    }
+
+    @media screen and (max-width: 425px) 
+    {    
+        .logo_as_link
+        {
+            padding: 0.45rem;
+            font-size: 1rem;
+        }
+
+        .main_heading p
+        {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0.5rem 2rem;
+            margin-inline-start: 2rem;
+            margin-inline-end: 2rem; 
+        }  
+
+        .report_type_tiles
+        a[href="/Files/council.html"],
+        a[href="/Files/authorities.html"]
+        {
+            font-size: 2rem;
+            padding: 1.5rem 4.5rem;
+        }
+
+    }
+
+    @media screen and (max-width: 375px)
+    {
+        .main_heading p
+        {
+            margin: 2rem 0rem 1.5rem 0rem;
+            text-align: center;
+            font-size: 1.55rem;
+            padding: 0.5rem 2rem;
+            margin-inline-start: 2rem;
+            margin-inline-end: 2rem; 
+        }  
+
+        .report_type_tiles
+        a[href="/Files/council.html"],
+        a[href="/Files/authorities.html"]
+        {
+            font-size: 1.75rem;
+            padding: 1.5rem 4.5rem;
+        }
+
+    }
+
+    @media screen and (max-width: 320px)
+    {
+        .main_heading p
+        {
+            margin: 2.4rem 0rem 1rem 0rem;
+            text-align: center;
+            font-size: 1.3rem;
+            padding: 0.5rem 2rem;
+            margin-inline-start: 1.5rem;
+            margin-inline-end: 1.5rem; 
+        }  
+
+        .report_type_tiles
+        a[href="/Files/council.html"],
+        a[href="/Files/authorities.html"]
+        {
+            font-size: 1.5rem;
+            padding: 1.3rem 4rem;
+        }
+
+        .council
+        {
+            margin-bottom: 3rem;
+        }
+
+        .navigation 
+        {
+            height: 12vh;            
+        }
+
+        .navigation .nav_items  
+        {
+            margin-inline-start: 2rem;
+        }
+
+        .logo_as_link
+        {
+            padding: 0.45rem;
+            font-size: 0.80rem;
+        }
+    } */
